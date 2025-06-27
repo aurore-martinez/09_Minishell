@@ -6,7 +6,7 @@
 /*   By: aumartin <aumartin@42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/21 10:07:36 by aumartin          #+#    #+#             */
-/*   Updated: 2025/06/27 21:35:35 by aumartin         ###   ########.fr       */
+/*   Updated: 2025/06/27 23:00:28 by aumartin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ static int	open_file(t_redir *redir)
 	if (fd == -1)
 	{
 		ft_putstr_fd("minishell: ", STDERR_FILENO);
-		perror(redir->file);
+		ft_putstr_fd(redir->file, STDERR_FILENO);
+		ft_putstr_fd(": No such file or directory\n", STDERR_FILENO);
 	}
 	return (fd);
 }

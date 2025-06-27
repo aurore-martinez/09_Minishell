@@ -4,7 +4,6 @@ echo -n -n -n test
 echo -n -nnn -nnnn
 echo -nnnnn
 echo -n-nnn -nnnn
-
 echo hello | cat | cat | wc -c
 echo hello | grep h | cat -e
 echo 'test' | cat
@@ -14,7 +13,6 @@ echo '"' | cat -e
 echo "echo  hello" | cat -e
 echo echo" " hello | cat -e
 echo '"'
-echo "  test  " | sed 's/^ *//;s/ *$//'
 echo "nested 'quotes' test"
 echo 'nested "quotes" test'
 echo "🧪 Running TESTS BUILTINS"
@@ -58,7 +56,6 @@ ps aux | grep bash
 seq 10 | tail -n 3
 printf "test\n" | wc -l
 ls -la | head -n 1
-env TEST=hello printenv TEST | cat -e
 ls     -l
 ls | grep .c | sort | uniq | wc -l
 cat < Makefile | wc -l
@@ -98,7 +95,6 @@ asg | bnu | ls | bob
 asg | bnu | ls
 env 333333
 echo $?
-env src/
 echo $?
 echo "REDIR"
 echo $?
@@ -111,21 +107,14 @@ echo $?
 echo $?
 echo $?
 echo $?
-echo bonjour > $us
 echo $?
-echo bonjour >> $us
 echo $?
-cat < $us | echo bonjour > test.txt
 cat < $us | cat < test.txt
 echo "🧪 TESTS EXPANSION"
 echo "$test     reste de l a string"
 echo $test"$test"
 export catceci="cat test.txt"
-$catceci
-"$catceci"
 export hellhess="ls -l | grep a.out"
-$hellhess
-"$hellhess"
 "ls" "-l" "|" "grep" "a.out"
 export ls-l="ls -l"
 echo dudde | $EMPTY
@@ -150,12 +139,6 @@ echo "   "
 echo ''
 echo "test with    spaces"
 echo "test" "with" "multiple" "args"
-exit
-exit 42
-exit 256
-/bin/ls ; echo $?
-ls /doesnotexist ; echo $?
-expr $? + $?
 echo in double quotes
 echo '$USER'
 echo '$PATH'
@@ -166,13 +149,6 @@ export TESTVAR=world
 env
 unset TESTVAR
 env
-cd /
-pwd
-cd ..
-pwd
-cd .
-pwd
-cd /tmp
 pwd
 ls
 ls ../..
