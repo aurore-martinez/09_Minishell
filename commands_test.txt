@@ -1,0 +1,202 @@
+echo "🧪 Running TESTS relou echo"
+echo -n -n test
+echo -n -n -n test
+echo -n -nnn -nnnn
+echo -nnnnn
+echo -n-nnn -nnnn
+
+echo hello | cat | cat | wc -c
+echo hello | grep h | cat -e
+echo 'test' | cat
+echo hello | cat -e
+echo echo             hello | cat -e
+echo '"' | cat -e
+echo "echo  hello" | cat -e
+echo echo" " hello | cat -e
+echo '"'
+echo "  test  " | sed 's/^ *//;s/ *$//'
+echo "nested 'quotes' test"
+echo 'nested "quotes" test'
+echo "🧪 Running TESTS BUILTINS"
+echo bonjour > bonjour.txt
+echo bonjour2 > bonjour
+echo -n test | cat -e
+echo "hello     world"
+pwd | cd src/
+pwd
+cd src/
+pwd
+cd ../
+pwd
+env | grep PWD
+env | sort | head -n 5
+echo test | wc -w
+export YOLO=Aurore
+echo 'append' >> test_log.txt
+export | grep VSCODE
+export name
+export | grep name
+env | grep name
+export bob=
+export | grep bob
+env | grep bob
+echo "🧪 Running TESTS"
+ls | grep .c | wc -l
+cat /etc/passwd | grep root | wc -l
+ls | grep . | grep .c | sort | uniq
+ls | unknowncmd
+env | grep PATH
+pwd
+whoami
+date
+ls | grep "" | wc -c
+ls | sort | grep src
+ls | grep -v .c
+ls -la | grep '^d'
+ls -la | awk '{print $1}'
+ps aux | grep bash
+seq 10 | tail -n 3
+printf "test\n" | wc -l
+ls -la | head -n 1
+env TEST=hello printenv TEST | cat -e
+ls     -l
+ls | grep .c | sort | uniq | wc -l
+cat < Makefile | wc -l
+echo test >> test_log.txt
+../../../../aumartin/../../usr/bin/ls
+../../../aumartin/../../usr/bin/ls
+cat < test_log.txt
+echo hello > out1.txt
+cat < out1.txt | wc -c
+ls | grep "src" | grep exec | wc -l
+echo test | grep test | grep -v "notfound"
+ls -l | grep ^d
+ls -l | grep ^-
+ls -al | grep "." | wc -l
+echo "hello | wc"
+ls | grep -v main | sort
+ls | sort | uniq | wc -l
+cat < Makefile > out2.txt
+cat < Makefile >> out2.txt
+ls -l | grep minishell | wc -l
+printf "bonjour\nbonjour\n" | wc -l
+seq 10 | wc -l
+yes | head -n 42 | wc -l
+echo -n "test" | wc -c
+seq 1 10 | tail -n 3
+printf "abc\n" | wc -l
+echo "🧪 Running TESTS Batards de la bible horrible"
+ls hola
+touch hola
+expr 1 + 1
+echo hola | cat | cat | cat | cat | cat | grep hola
+cat Makefile | grep srcs | grep srcs | cat -e
+echo "🧪 TESTS commands not found et exit code"
+ert|wc -l
+er | t | b | zy u | wc
+asg | bnu | ls | bob
+asg | bnu | ls
+env 333333
+echo $?
+env src/
+echo $?
+echo "REDIR"
+echo $?
+echo $?
+echo $?
+echo $?
+echo $?
+echo $?
+echo $?
+echo $?
+echo $?
+echo $?
+echo bonjour > $us
+echo $?
+echo bonjour >> $us
+echo $?
+cat < $us | echo bonjour > test.txt
+cat < $us | cat < test.txt
+echo "🧪 TESTS EXPANSION"
+echo "$test     reste de l a string"
+echo $test"$test"
+export catceci="cat test.txt"
+$catceci
+"$catceci"
+export hellhess="ls -l | grep a.out"
+$hellhess
+"$hellhess"
+"ls" "-l" "|" "grep" "a.out"
+export ls-l="ls -l"
+echo dudde | $EMPTY
+/bin/ls /
+/bin/ls /doesnotexist
+/bin/echo Hello
+/bin/echo
+/bin/echo -n "test"
+ls
+ls -l
+ls -l /tmp
+ls -l /doesnotexist
+echo Hello World
+echo
+echo -n
+echo -n "Hello"
+echo "Hello     World"
+echo "cat lol.c | cat > lol.c"
+echo '$USER'
+echo "$USER"
+echo "   "
+echo ''
+echo "test with    spaces"
+echo "test" "with" "multiple" "args"
+exit
+exit 42
+exit 256
+/bin/ls ; echo $?
+ls /doesnotexist ; echo $?
+expr $? + $?
+echo in double quotes
+echo '$USER'
+echo '$PATH'
+echo '   '
+env
+export TESTVAR=hello
+export TESTVAR=world
+env
+unset TESTVAR
+env
+cd /
+pwd
+cd ..
+pwd
+cd .
+pwd
+cd /tmp
+pwd
+ls
+ls ../..
+ls ./../
+ls ../../bin
+unset PATH
+ls
+export PATH=/bin:/usr/bin
+ls
+ls > out.txt
+cat < out.txt
+echo test > out.txt
+cat out.txt
+echo test >> out.txt
+cat out.txt
+cat << EOF
+test
+EOF
+cat file | grep test | wc -l
+ls filethatdoesntexist | grep bla | more
+ls | grep bin > out.txt
+cat | cat | ls
+dsbksdgbksdghsd
+echo $USER
+echo "$USER"
+echo $HOME
+echo "$HOME"
