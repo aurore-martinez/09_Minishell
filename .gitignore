@@ -2,5 +2,3 @@ objs
 /lib/*/*.o
 /lib/*.a
 minishell
-/minishell_tester
-tests
